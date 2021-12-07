@@ -10,6 +10,11 @@ Console.WriteLine($"CurrentThread.CurrentUICulture: {Thread.CurrentThread.Curren
 Console.WriteLine($"Direct Test Value for Culture: {Resource.ResourceManager.GetString(name_of_property)}");
 Console.WriteLine(" -------------------- ");
 
+Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("de-DE");
+Console.WriteLine($"CurrentThread.CurrentUICulture: {Thread.CurrentThread.CurrentUICulture.Name}");
+Console.WriteLine($"Direct Test Value for Culture: {Resource.Test}");
+Console.WriteLine(" -------------------- ");
+
 Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("en-US");
 Console.WriteLine($"CurrentThread.CurrentUICulture: {Thread.CurrentThread.CurrentUICulture.Name}");
 Console.WriteLine($"Direct Test Value for Culture: {Resource.Test}");
