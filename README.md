@@ -7,6 +7,7 @@ Output should look like the following:
 ```
 Supported Cultures using Resource Manager
 > German (Germany)
+> English
 > English (United Kingdom)
 > Spanish (Spain)
  ====================
@@ -20,6 +21,9 @@ CurrentThread.CurrentUICulture: de-DE
 Direct Test Value for Culture: de-DE: Test Value (In German for Germany)
  --------------------
 CurrentThread.CurrentUICulture: en-US
+Direct Test Value for Culture: en: Test Value (In English)
+ --------------------
+CurrentThread.CurrentUICulture: es-MX
 Direct Test Value for Culture: Default: Test Value (Default Fallback)
  --------------------
  ```

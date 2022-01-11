@@ -28,5 +28,10 @@ Console.WriteLine($"CurrentThread.CurrentUICulture: {Thread.CurrentThread.Curren
 Console.WriteLine($"Direct Test Value for Culture: {Resource.Test}");
 Console.WriteLine(" -------------------- ");
 
+Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("es-MX");
+Console.WriteLine($"CurrentThread.CurrentUICulture: {Thread.CurrentThread.CurrentUICulture.Name}");
+Console.WriteLine($"Direct Test Value for Culture: {Resource.Test}");
+Console.WriteLine(" -------------------- ");
+
 
 Console.ReadLine();

@@ -23,6 +23,9 @@
 		<EmbeddedResource Update="Resources\Resource.en-GB.resx">
 			<Generator>ResXFileCodeGenerator</Generator>
 		</EmbeddedResource>
+		<EmbeddedResource Update="Resources\Resource.en.resx">
+		  <Generator>ResXFileCodeGenerator</Generator>
+		</EmbeddedResource>
 		<EmbeddedResource Update="Resources\Resource.es-ES.resx">
 			<Generator>ResXFileCodeGenerator</Generator>
 		</EmbeddedResource>
