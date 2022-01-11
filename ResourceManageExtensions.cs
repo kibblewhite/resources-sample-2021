@@ -12,7 +12,7 @@ public static class ResourceManageExtensions
     /// <returns></returns>
     static public IEnumerable<CultureInfo> SupportedCultures(this ResourceManager manager)
     {
-        return _resource_cultures.GetOrAdd(manager.ResourceSetType, (t) => CultureInfo.GetCultures(CultureTypes.AllCultures).Where(x => !x.Equals(CultureInfo.InvariantCulture) && manager.GetResourceSet(x, true, false) != null));
+        return _resource_cultures.GetOrAdd(manager.ResourceSetType, (t) => CultureInfo.GetCultures(CultureTypes.AllCultures).Where(x => x.Equals(CultureInfo.InvariantCulture) is false && manager.GetResourceSet(x, true, false) is not null));
     }
 
     /// <summary>
