@@ -1,5 +1,5 @@
 ﻿
-IEnumerable<CultureInfo> supported_cultures = Resource.ResourceManager.SupportedCultured();
+IEnumerable<CultureInfo> supported_cultures = Resource.ResourceManager.SupportedCultures();
 Console.WriteLine("Supported Cultures using Resource Manager");
 foreach (CultureInfo culture in supported_cultures)
 {
