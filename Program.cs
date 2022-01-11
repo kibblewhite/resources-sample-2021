@@ -1,4 +1,12 @@
 ﻿
+IEnumerable<CultureInfo> supported_cultures = Resource.ResourceManager.SupportedCultured();
+Console.WriteLine("Supported Cultures using Resource Manager");
+foreach (CultureInfo culture in supported_cultures)
+{
+    Console.WriteLine($"> {culture.EnglishName}");
+}
+Console.WriteLine(" ==================== ");
+
 Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("en-GB");
 Console.WriteLine($"CurrentThread.CurrentUICulture: {Thread.CurrentThread.CurrentUICulture.Name}");
 Console.WriteLine($"Direct Test Value for Culture: {Resource.Test}");
@@ -19,5 +27,6 @@ Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("en-US
 Console.WriteLine($"CurrentThread.CurrentUICulture: {Thread.CurrentThread.CurrentUICulture.Name}");
 Console.WriteLine($"Direct Test Value for Culture: {Resource.Test}");
 Console.WriteLine(" -------------------- ");
+
 
 Console.ReadLine();
